@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        DevOps Roadmap | Learning Path
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- Navigation -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            DevOps<span>Roadmap</span>
+
+        </div>
+
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="roadmap.html"
+                    class="active"
+                >
+                    Roadmap
+                </a>
+            </li>
+
+            <li>
+                <a href="resources.html">
+                    Resources
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- Page Header -->
+
+    <section class="page-header">
+
+        <h1>
+            DevOps Engineer Roadmap
+        </h1>
+
+        <p>
+
+            Follow the learning path from beginner
+            to advanced DevOps Engineer.
+
+        </p>
+
+    </section>
+
+
+    <!-- Progress -->
+
+    <section class="progress-section">
+
+        <div class="progress-info">
+
+            <span>
+                Your Learning Progress
+            </span>
+
+            <span id="progressText">
+                0%
+            </span>
+
+        </div>
+
+
+        <div class="progress-bar">
+
+            <div
+                class="progress"
+                id="progressBar"
+            ></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Roadmap -->
+
+    <main class="roadmap-container">
+
+
+        <!-- Stage 1 -->
+
+        <div class="roadmap-card">
+
+            <div class="roadmap-number">
+
+                01
+
+            </div>
+
+
+            <div class="roadmap-content">
+
+                <h2>
+                    Linux & Operating Systems
+                </h2>
+
+                <p>
+
+                    Learn the fundamentals of Linux
+                    and system administration.
+
+                </p>
+
+
+                <button
+                    class="topic-btn"
+                    onclick="toggleTopic('linux')"
+                >
+
+                    View Topics
+
+                </button>
+
+
+                <div
+                    class="topic-list"
+                    id="linux"
+                >
+
+                    <span>Linux File System</span>
+
+                    <span>Linux Commands</span>
+
+                    <span>Users & Permissions</span>
+
+                    <span>Processes</span>
+
+                    <span>Services</span>
+
+                    <span>Bash Scripting</span>
+
+                    <span>Package Management</span>
+
+                </div>
+
+            </div>
+
+
+            <input
+                type="checkbox"
+                class="complete-check"
+                onchange="updateProgress()"
+            >
+
+        </div>
+
+
+        <!-- Stage 2 -->
+
+        <div class="roadmap-card">
+
+            <div class="roadmap-number">
+
+                02
+
+            </div>
+
+
+            <div class="roadmap-content">
+
+                <h2>
+                    Networking
+                </h2>
+
+                <p>
+
+                    Understand how servers,
+                    applications and services communicate.
+
+                </p>
+
+
+                <button
+                    class="topic-btn"
+                    onclick="toggleTopic('networking')"
+                >
+
+                    View Topics
+
+                </button>
+
+
+                <div
+                    class="topic-list"
+                    id="networking"
+                >
+
+                    <span>TCP/IP</span>
+
+                    <span>DNS</span>
+
+                    <span>HTTP / HTTPS</span>
+
+                    <span>SSH</span>
+
+                    <span>IP Addressing</span>
+
+                    <span>Subnetting</span>
+
+                    <span>Load Balancers</span>
+
+                    <span>Firewalls</span>
+
+                </div>
+
+            </div>
+
+
+            <input
+                type="checkbox"
+                class="complete-check"
+                onchange="updateProgress()"
+            >
+
+        </div>
+
+
+        <!-- Stage 3 -->
+
+        <div class="roadmap-card">
+
+            <div class="roadmap-number">
+
+                03
+
+            </div>
+
+
+            <div class="roadmap-content">
+
+                <h2>
+                    Git & Version Control
+                </h2>
+
+                <p>
+
+                    Learn how development teams
+                    manage source code.
+
+                </p>
+
+
+                <button
+                    class="topic-btn"
+                    onclick="toggleTopic('git')"
+                >
+
+                    View Topics
+
+                </button>
+
+
+                <div
+                    class="topic-list"
+                    id="git"
+                >
+
+                    <span>Git Basics</span>
+
+                    <span>Repositories</span>
+
+                    <span>Branches</span>
+
+                    <span>Merging</span>
+
+                    <span>Rebase</span>
+
+                    <span>Pull Requests</span>
+
+                    <span>GitHub</span>
+
+                    <span>Git Workflows</span>
+
+                </div>
+
+            </div>
+
+
+            <input
+                type="checkbox"
+                class="complete-check"
+                onchange="updateProgress()"
+            >
+
+        </div>
+
+
+        <!-- Stage 4 -->
+
+        <div class="roadmap-card">
+
+            <div class="roadmap-number">
+
+                04
+
+            </div>
+
+
+            <div class="roadmap-content">
+
+                <h2>
+                    Scripting & Automation
+                </h2>
+
+                <p>
+
+                    Automate repetitive
+                    infrastructure tasks.
+
+                </p>
+
+
+                <button
+                    class="topic-btn"
+                    onclick="toggleTopic('scripting')"
+                >
+
+                    View Topics
+
+                </button>
+
+
+                <div
+                    class="topic-list"
+                    id="scripting"
+                >
+
+                    <span>Bash</span>
+
+                    <span>Python</span>
+
+                    <span>PowerShell</span>
+
+                    <span>JSON</span>
+
+                    <span>YAML</span>
+
+                    <span>Automation Scripts</span>
+
+                </div>
+
+            </div>
+
+
+            <input
+                type="checkbox"
+                class="complete-check"
+                onchange="updateProgress()"
+            >
+
+        </div>
+
+
+        <!-- Stage 5 -->
+
+        <div class="roadmap-card">
+
+            <div class="roadmap-number">
+
+                05
+
+            </div>
+
+
+            <div class="roadmap-content">
+
+                <h2>
+                    Docker & Containers
+                </h2>
+
+                <p>
+
+                    Package applications
+                    into portable containers.
+
+                </p>
+
+
+                <button
+                    class="topic-btn"
+                    onclick="toggleTopic('docker')"
+                >
+
+                    View Topics
+
+                </button>
+
+
+                <div
+                    class="topic-list"
+                    id="docker"
+                >
+
+                    <span>Docker Architecture</span>
+
+                    <span>Docker Images</span>
+
+                    <span>Containers</span>
+
+                    <span>Dockerfile</span>
+
+                    <span>Docker Compose</span>
+
+                    <span>Volumes</span>
+
+                    <span>Networking</span>
+
+                </div>
+
+            </div>
+
+
+            <input
+                type="checkbox"
+                class="complete-check"
+                onchange="updateProgress()"
+            >
+
+        </div>
+
+
+        <!-- Stage 6 -->
+
+        <div class="roadmap-card">
+
+            <div class="roadmap-number">
+
+                06
+
+            </div>
+
+
+            <div class="roadmap-content">
+
+                <h2>
+                    Kubernetes
+                </h2>
+
+                <p>
+
+                    Learn container orchestration
+                    for production environments.
+
+                </p>
+
+
+                <button
+                    class="topic-btn"
+                    onclick="toggleTopic('kubernetes')"
+                >
+
+                    View Topics
+
+                </button>
+
+
+                <div
+                    class="topic-list"
+                    id="kubernetes"
+                >
+
+                    <span>Kubernetes Architecture</span>
+
+                    <span>Pods</span>
+
+                    <span>Deployments</span>
+
+                    <span>Services</span>
+
+                    <span>Namespaces</span>
+
+                    <span>ConfigMaps</span>
+
+                    <span>Secrets</span>
+
+                    <span>Ingress</span>
+
+                    <span>Helm</span>
+
+                </div>
+
+            </div>
+
+
+            <input
+                type="checkbox"
+                class="complete-check"
+                onchange="updateProgress()"
+            >
+
+        </div>
+
+
+        <!-- Stage 7 -->
+
+        <div class="roadmap-card">
+
+            <div class="roadmap-number">
+
+                07
+
+            </div>
+
+
+            <div class="roadmap-content">
+
+                <h2>
+                    CI/CD Pipelines
+                </h2>
+
+                <p>
+
+                    Automate application
+                    build, testing and deployment.
+
+                </p>
+
+
+                <button
+                    class="topic-btn"
+                    onclick="toggleTopic('cicd')"
+                >
+
+                    View Topics
+
+                </button>
+
+
+                <div
+                    class="topic-list"
+                    id="cicd"
+                >
+
+                    <span>Jenkins</span>
+
+                    <span>GitHub Actions</span>
+
+                    <span>GitLab CI/CD</span>
+
+                    <span>Build Automation</span>
+
+                    <span>Testing</span>
+
+                    <span>Deployment Strategies</span>
+
+                    <span>Blue-Green Deployment</span>
+
+                    <span>Canary Deployment</span>
+
+                </div>
+
+            </div>
+
+
+            <input
+                type="checkbox"
+                class="complete-check"
+                onchange="updateProgress()"
+            >
+
+        </div>
+
+
+        <!-- Stage 8 -->
+
+        <div class="roadmap-card">
+
+            <div class="roadmap-number">
+
+                08
+
+            </div>
+
+
+            <div class="roadmap-content">
+
+                <h2>
+                    Infrastructure as Code
+                </h2>
+
+                <p>
+
+                    Manage infrastructure
+                    using code and automation.
+
+                </p>
+
+
+                <button
+                    class="topic-btn"
+                    onclick="toggleTopic('iac')"
+                >
+
+                    View Topics
+
+                </button>
+
+
+                <div
+                    class="topic-list"
+                    id="iac"
+                >
+
+                    <span>Terraform</span>
+
+                    <span>Terraform Modules</span>
+
+                    <span>Terraform State</span>
+
+                    <span>Ansible</span>
+
+                    <span>Playbooks</span>
+
+                    <span>Configuration Management</span>
+
+                </div>
+
+            </div>
+
+
+            <input
+                type="checkbox"
+                class="complete-check"
+                onchange="updateProgress()"
+            >
+
+        </div>
+
+
+        <!-- Stage 9 -->
+
+        <div class="roadmap-card">
+
+            <div class="roadmap-number">
+
+                09
+
+            </div>
+
+
+            <div class="roadmap-content">
+
+                <h2>
+                    Cloud Computing
+                </h2>
+
+                <p>
+
+                    Learn one major cloud platform
+                    and understand cloud infrastructure.
+
+                </p>
+
+
+                <button
+                    class="topic-btn"
+                    onclick="toggleTopic('cloud')"
+                >
+
+                    View Topics
+
+                </button>
+
+
+                <div
+                    class="topic-list"
+                    id="cloud"
+                >
+
+                    <span>AWS</span>
+
+                    <span>Microsoft Azure</span>
+
+                    <span>Google Cloud</span>
+
+                    <span>Compute</span>
+
+                    <span>Storage</span>
+
+                    <span>Networking</span>
+
+                    <span>IAM</span>
+
+                </div>
+
+            </div>
+
+
+            <input
+                type="checkbox"
+                class="complete-check"
+                onchange="updateProgress()"
+            >
+
+        </div>
+
+
+        <!-- Stage 10 -->
+
+        <div class="roadmap-card">
+
+            <div class="roadmap-number">
+
+                10
+
+            </div>
+
+
+            <div class="roadmap-content">
+
+                <h2>
+                    Monitoring & Observability
+                </h2>
+
+                <p>
+
+                    Monitor applications
+                    and infrastructure.
+
+                </p>
+
+
+                <button
+                    class="topic-btn"
+                    onclick="toggleTopic('monitoring')"
+                >
+
+                    View Topics
+
+                </button>
+
+
+                <div
+                    class="topic-list"
+                    id="monitoring"
+                >
+
+                    <span>Prometheus</span>
+
+                    <span>Grafana</span>
+
+                    <span>Alertmanager</span>
+
+                    <span>Logging</span>
+
+                    <span>ELK Stack</span>
+
+                    <span>Loki</span>
+
+                    <span>Distributed Tracing</span>
+
+                </div>
+
+            </div>
+
+
+            <input
+                type="checkbox"
+                class="complete-check"
+                onchange="updateProgress()"
+            >
+
+        </div>
+
+
+        <!-- Stage 11 -->
+
+        <div class="roadmap-card">
+
+            <div class="roadmap-number">
+
+                11
+
+            </div>
+
+
+            <div class="roadmap-content">
+
+                <h2>
+                    DevSecOps & SRE
+                </h2>
+
+                <p>
+
+                    Build secure, reliable
+                    and highly available systems.
+
+                </p>
+
+
+                <button
+                    class="topic-btn"
+                    onclick="toggleTopic('security')"
+                >
+
+                    View Topics
+
+                </button>
+
+
+                <div
+                    class="topic-list"
+                    id="security"
+                >
+
+                    <span>DevSecOps</span>
+
+                    <span>Secrets Management</span>
+
+                    <span>Container Security</span>
+
+                    <span>Vulnerability Scanning</span>
+
+                    <span>SLI</span>
+
+                    <span>SLO</span>
+
+                    <span>SLA</span>
+
+                    <span>Incident Management</span>
+
+                </div>
+
+            </div>
+
+
+            <input
+                type="checkbox"
+                class="complete-check"
+                onchange="updateProgress()"
+            >
+
+        </div>
+
+
+    </main>
+
+
+    <footer>
+
+        <h3>
+            DevOps Roadmap
+        </h3>
+
+        <p>
+            Keep Learning. Keep Building.
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
